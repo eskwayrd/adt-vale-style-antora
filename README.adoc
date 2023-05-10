@@ -40,3 +40,10 @@ https://github.com/eskwayrd/adt-vale-style-antora/releases/download/latest/Antor
 # List of styles to load.
 BasedOnStyles = Antora
 ----
+
+
+== Included dictionaries
+
+- The Hunspell `en_US-large` dictionary from the https://sourceforge.net/projects/wordlist/files/speller/2020.12.07/[SCOWL 2020 release].
+
+- An "Antora" dictionary that includes Antora-specific terms.
