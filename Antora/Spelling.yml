@@ -1,0 +1,7 @@
+extends: spelling
+message: "'%s'?"
+dicpath: .
+dictionaries:
+  - en_US-large
+  - antora
+level: error

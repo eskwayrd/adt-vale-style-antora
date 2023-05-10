@@ -1,0 +1,42 @@
+// vim: tw=0 ai et ts=2 sw=2
+= adt-vale-style-antora
+
+A Vale style for Antora documentation.
+
+NOTE: This project is neither maintained or endorsed by https://github.com/errata-ai/[errata-ai^].
+
+
+== Usage
+
+There are two ways to use this style:
+
+1. Download the https://github.com/eskwayrd/adt-vale-style-antora/releases/tag/latest[latest release^], copy the `Antora` folder to your Vale `StylesPath`, and include it in your `.vale.ini` configuration file:
++
+[source, ini]
+----
+# This goes in a file named either `.vale.ini` or `_vale.ini`.
+StylesPath = path/to/some/directory
+MinAlertLevel = warning # suggestion, warning or error
+
+# Only Asciidoc and .txt files; change to whatever you're using.
+[*.{adoc,txt}]
+# List of styles to load.
+BasedOnStyles = Antora
+----
+
+2. Add the repo URL to your Vale `Packages` in your `.vale.ini` configuration file:
++
+[source, ini]
+----
+# This goes in a file named either `.vale.ini` or `_vale.ini`.
+StylesPath = path/to/some/directory
+MinAlertLevel = warning # suggestion, warning or error
+
+Packages = Google, \
+https://github.com/eskwayrd/adt-vale-style-antora/releases/download/latest/Antora.zip
+
+# Only Asciidoc and .txt files; change to whatever you're using.
+[*.{adoc,txt}]
+# List of styles to load.
+BasedOnStyles = Antora
+----
